@@ -10,12 +10,12 @@ namespace LogicLayer
         private const string DB_USER = "dellorto";
         private const string DB_PASSWORD = "passw0rd";
 
-        internal static DbConnection getConnection()
+        internal static SqlConnection getConnection()
         {
             string connectionString = String.Format(
-            "Data Source=(local);Initial Catalog={0};"
+            "Data Source=(local);;Connection Timeout=3;Initial Catalog={0};"
             + "User Id={1};Password={2};", DB_CATALOG, DB_USER, DB_PASSWORD);
-
+            var _return = new SqlConnection(connectionString);
             return new SqlConnection(connectionString);
         }
     }
