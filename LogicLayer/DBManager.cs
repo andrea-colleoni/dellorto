@@ -7,6 +7,7 @@ namespace LogicLayer
     internal class DBManager
     {
         private const string DB_CATALOG = "DellOrtoLuraschi";
+        // commento
 
         internal static DbConnection getConnection()
         {
