@@ -20,15 +20,16 @@ namespace DesktopWinForms
             lblStatus.Text = "Inattivo";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnStartLoop_Click(object sender, EventArgs e)
         {
             lblStatus.Text = "SW in funzione...";
-            PreliminaryChecks.SWNotReady += (o, r) =>
+            PreliminaryChecks.Instance().SWNotReady += (o, r) =>
             {
-                lblStatus.Text = "Rilevato SW non pronto alle " + r.TimeReached;
+                MessageBox.Show("!!");
+                lblStatus.Text = "Rilevato SW non pronto";
                 Debug.WriteLine("Status: {0}", r.Ready);
             };
-            Task.Run(() => PreliminaryChecks.StartCheckLoop(1000));
+            Task.Run(() => PreliminaryChecks.Instance().StartCheckLoop(1000));
         }
 
     }

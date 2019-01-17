@@ -11,16 +11,30 @@ namespace LogicLayer
 {
     public class PreliminaryChecks
     {
-        public static event EventHandler<SWNotReadyEventArgs> SWNotReady;
-
+        public event EventHandler<SWNotReadyEventArgs> SWNotReady;
         public class SWNotReadyEventArgs : EventArgs
         {
             public bool Ready { get; set; }
             public DateTime TimeReached { get; set; }
         }
 
-        private static bool LoopRunning = false;
-        public static void StartCheckLoop(int pollingTime)
+        private bool LoopRunning = false;
+        private static PreliminaryChecks _Instance;
+
+        private PreliminaryChecks()
+        {
+
+        }
+
+        public static PreliminaryChecks Instance()
+        {
+            if (_Instance == null)
+            {
+                _Instance = new PreliminaryChecks();
+            }
+            return _Instance;
+        }
+        public void StartCheckLoop(int pollingTime)
         {
             Debug.WriteLine("Start loop");
             LoopRunning = true;
@@ -30,13 +44,13 @@ namespace LogicLayer
                 Thread.Sleep(pollingTime);
             }
         }
-        public static void StopCheckLoop()
+        public void StopCheckLoop()
         {
             Debug.WriteLine("Stop loop");
             LoopRunning = false;
         }
 
-        public static bool CheckSWReady()
+        public bool CheckSWReady()
         {
             return Task.Run(async () => await CheckSWReadyAsync()).Result;
         }
@@ -45,7 +59,7 @@ namespace LogicLayer
         /// Verifica se il SW è pronto per funzionare
         /// </summary>
         /// <returns></returns>
-        public static async Task<bool> CheckSWReadyAsync()
+        public async Task<bool> CheckSWReadyAsync()
         {
             var _return = true;
             // facciamo tutte le verifiche
@@ -63,7 +77,7 @@ namespace LogicLayer
             return _return;
         }
 
-        private static bool DBOnline()
+        private bool DBOnline()
         {
             return Task.Run(async () => await DBOnlineAsync()).Result;
         }
@@ -72,7 +86,7 @@ namespace LogicLayer
         /// Verifica se il DB è on line
         /// </summary>
         /// <returns>true se il DB è on ine, altrimenti false.</returns>
-        private static async Task<bool> DBOnlineAsync()
+        private async Task<bool> DBOnlineAsync()
         {
             var _return = true;
             try
