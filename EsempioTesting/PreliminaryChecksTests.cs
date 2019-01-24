@@ -15,9 +15,9 @@ namespace LogicLayer.Tests
         public void CheckSWReadyTest()
         {
             var risultatoAtteso = true;
-            var risultatoReale = PreliminaryChecks.CheckSWReady();
+            PreliminaryChecks.Instance().CheckSWReady(500);
 
-            Assert.AreEqual(risultatoAtteso, risultatoReale);
+            Assert.AreEqual(risultatoAtteso, PreliminaryChecks.Instance().SWStatus);
         }
     }
 }

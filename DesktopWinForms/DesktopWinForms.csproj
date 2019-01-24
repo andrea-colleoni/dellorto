@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctStation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctStation.Designer.cs">
+      <DependentUpon>ctStation.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +63,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ctRealPlc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctRealPlc.Designer.cs">
+      <DependentUpon>ctRealPlc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ctStation.resx">
+      <DependentUpon>ctStation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmMain.resx">
       <DependentUpon>fmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +84,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ctRealPlc.resx">
+      <DependentUpon>ctRealPlc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
