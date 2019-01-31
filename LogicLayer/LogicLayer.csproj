@@ -34,6 +34,9 @@
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="S7.Net, Version=0.3.0.0, Culture=neutral, PublicKeyToken=d5812d469e84c693, processorArchitecture=MSIL">
+      <HintPath>..\packages\S7netplus.0.3.0\lib\net452\S7.Net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Reactive, Version=4.1.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
@@ -62,7 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBManager.cs" />
-    <Compile Include="PLC\Plc.cs" />
+    <Compile Include="PLC\HardwarePlc.cs" />
+    <Compile Include="PLC\PlcMonitor.cs" />
     <Compile Include="PLC\PlcEmulator.cs" />
     <Compile Include="PLC\PlcMessage.cs" />
     <Compile Include="PLC\PlcStatus.cs" />

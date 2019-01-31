@@ -5,10 +5,10 @@ using System.Reactive.Linq;
 
 namespace DesktopWinForms
 {
-    public partial class ctRealPlc : UserControl
+    public partial class ctPlc : UserControl
     {
-        private Plc _Plc;
-        public Plc Plc
+        private PlcMonitor _Plc;
+        public PlcMonitor Plc
         {
             get
             {
@@ -19,7 +19,7 @@ namespace DesktopWinForms
                 _Plc = value;
                 if (_Plc != null)
                 {
-                    lblName.Text = _Plc.Name;
+                    lblName.Text = $"{_Plc.Name} - {(_Plc.IP == null ? "?" : _Plc.IP.Split('.')[3])}";
                     _Plc.PlcBit().Subscribe(b =>
                     {
                         if (!this.IsDisposed)
@@ -57,23 +57,46 @@ namespace DesktopWinForms
             }
         }
 
-        public ctRealPlc()
+        public ctPlc()
         {
             InitializeComponent();
         }
 
         private void btnAccendi_Click(object sender, EventArgs e)
         {
-            if (!Plc.Acceso)
+            if (Plc.Emulazione)
             {
-                Plc.Acceso = true;
+                Plc.PlcEmulator.accendi();
             }
-            Plc.RealPlc.accendi();
         }
 
         private void btnSpegni_Click(object sender, EventArgs e)
         {
-            Plc.RealPlc.spegni();
+            if (Plc.Emulazione)
+            {
+                Plc.PlcEmulator.spegni();
+            }
+        }
+
+        private void chkEmulazione_CheckedChanged(object sender, EventArgs e)
+        {
+            Plc.Emulazione = chkEmulazione.Checked;
+            btnAccendi.Enabled = chkEmulazione.Checked;
+            btnSpegni.Enabled = chkEmulazione.Checked;
+        }
+
+        private void btnMonitor_Click(object sender, EventArgs e)
+        {
+            if(Plc.Acceso)
+            {
+                Plc.StopMonitor();
+                btnMonitor.Text = "Avvia Monitor";
+            }
+            else
+            {
+                Plc.StartMonitor();
+                btnMonitor.Text = "Arresta Monitor";
+            }
         }
     }
 }

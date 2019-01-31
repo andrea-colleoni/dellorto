@@ -1,6 +1,6 @@
 ﻿namespace DesktopWinForms
 {
-    partial class ctRealPlc
+    partial class ctPlc
     {
         /// <summary> 
         /// Variabile di progettazione necessaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctRealPlc));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctPlc));
             System.Windows.Forms.AGaugeRange aGaugeRange1 = new System.Windows.Forms.AGaugeRange();
             System.Windows.Forms.AGaugeRange aGaugeRange2 = new System.Windows.Forms.AGaugeRange();
             this.lblName = new System.Windows.Forms.Label();
@@ -37,6 +37,8 @@
             this.lblBit = new System.Windows.Forms.Label();
             this.pctStatus = new System.Windows.Forms.PictureBox();
             this.aGauge1 = new System.Windows.Forms.AGauge();
+            this.btnMonitor = new System.Windows.Forms.Button();
+            this.chkEmulazione = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctStatus)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,17 +128,35 @@
             this.aGauge1.ScaleNumbersStepScaleLines = 10;
             this.aGauge1.Value = 0F;
             // 
-            // ctRealPlc
+            // btnMonitor
+            // 
+            resources.ApplyResources(this.btnMonitor, "btnMonitor");
+            this.btnMonitor.Name = "btnMonitor";
+            this.btnMonitor.UseVisualStyleBackColor = true;
+            this.btnMonitor.Click += new System.EventHandler(this.btnMonitor_Click);
+            // 
+            // chkEmulazione
+            // 
+            resources.ApplyResources(this.chkEmulazione, "chkEmulazione");
+            this.chkEmulazione.Checked = true;
+            this.chkEmulazione.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkEmulazione.Name = "chkEmulazione";
+            this.chkEmulazione.UseVisualStyleBackColor = true;
+            this.chkEmulazione.CheckedChanged += new System.EventHandler(this.chkEmulazione_CheckedChanged);
+            // 
+            // ctPlc
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chkEmulazione);
+            this.Controls.Add(this.btnMonitor);
             this.Controls.Add(this.aGauge1);
             this.Controls.Add(this.pctStatus);
             this.Controls.Add(this.lblBit);
             this.Controls.Add(this.btnSpegni);
             this.Controls.Add(this.btnAccendi);
             this.Controls.Add(this.lblName);
-            this.Name = "ctRealPlc";
+            this.Name = "ctPlc";
             ((System.ComponentModel.ISupportInitialize)(this.pctStatus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -151,5 +171,7 @@
         private System.Windows.Forms.Label lblBit;
         private System.Windows.Forms.PictureBox pctStatus;
         private System.Windows.Forms.AGauge aGauge1;
+        private System.Windows.Forms.Button btnMonitor;
+        private System.Windows.Forms.CheckBox chkEmulazione;
     }
 }

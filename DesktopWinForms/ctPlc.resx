@@ -117,20 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16.2pt</value>
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 0</value>
+    <value>148, 0</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 32</value>
+    <value>394, 20</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -147,22 +144,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btnAccendi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
   <data name="btnAccendi.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 32</value>
   </data>
   <data name="btnAccendi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 41</value>
+    <value>126, 41</value>
   </data>
   <data name="btnAccendi.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="btnAccendi.Text" xml:space="preserve">
-    <value>Accendi</value>
+    <value>Accendi PLC</value>
   </data>
   <data name="&gt;&gt;btnAccendi.Name" xml:space="preserve">
     <value>btnAccendi</value>
@@ -174,22 +171,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAccendi.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btnSpegni.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
   <data name="btnSpegni.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 79</value>
   </data>
   <data name="btnSpegni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 41</value>
+    <value>126, 41</value>
   </data>
   <data name="btnSpegni.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="btnSpegni.Text" xml:space="preserve">
-    <value>Spegni</value>
+    <value>Spegni PLC</value>
   </data>
   <data name="&gt;&gt;btnSpegni.Name" xml:space="preserve">
     <value>btnSpegni</value>
@@ -201,7 +198,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSpegni.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="lblBit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -231,7 +228,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblBit.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="pctStatus.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -321,10 +318,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pctStatus.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="aGauge1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 0</value>
+    <value>148, 33</value>
   </data>
   <data name="aGauge1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 150</value>
@@ -345,6 +342,63 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;aGauge1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnMonitor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="btnMonitor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 79</value>
+  </data>
+  <data name="btnMonitor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 108</value>
+  </data>
+  <data name="btnMonitor.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnMonitor.Text" xml:space="preserve">
+    <value>Avvia Monitor</value>
+  </data>
+  <data name="&gt;&gt;btnMonitor.Name" xml:space="preserve">
+    <value>btnMonitor</value>
+  </data>
+  <data name="&gt;&gt;btnMonitor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMonitor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMonitor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkEmulazione.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkEmulazione.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="chkEmulazione.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 128</value>
+  </data>
+  <data name="chkEmulazione.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 24</value>
+  </data>
+  <data name="chkEmulazione.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkEmulazione.Text" xml:space="preserve">
+    <value>Emulazione PLC</value>
+  </data>
+  <data name="&gt;&gt;chkEmulazione.Name" xml:space="preserve">
+    <value>chkEmulazione</value>
+  </data>
+  <data name="&gt;&gt;chkEmulazione.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEmulazione.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkEmulazione.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -354,10 +408,10 @@
     <value>8, 16</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>542, 190</value>
+    <value>545, 192</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ctRealPlc</value>
+    <value>ctPlc</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

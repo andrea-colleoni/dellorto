@@ -8,7 +8,7 @@ namespace LogicLayer.PLC
 {
     public class Station
     {
-        public Plc Plc { get; set; }
+        public PlcMonitor Plc { get; set; }
         public string Name { get; set; }
     }
 }
