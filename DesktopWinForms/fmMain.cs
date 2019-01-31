@@ -54,21 +54,21 @@ namespace DesktopWinForms
             var st1 = new Station();
             st1.Name = "Stazione 1";
             var plc1 = new PlcEmulator("PLC 1");
-            var plcCtl1 = new Plc(250, new TimeSpan(0, 0, 5));
+            var plcCtl1 = new Plc(10, 100, new TimeSpan(0, 0, 5));
             plcCtl1.RealPlc = plc1;
             st1.Plc = plcCtl1;
 
             var st2 = new Station();
             st2.Name = "Stazione 2";
             var plc2 = new PlcEmulator("PLC 2");
-            var plcCtl2 = new Plc(250, new TimeSpan(0, 0, 5));
+            var plcCtl2 = new Plc(10, 50, new TimeSpan(0, 0, 5));
             plcCtl2.RealPlc = plc2;
             st2.Plc = plcCtl2;
 
             ctStation1.Station = st1;
-            ctStation1.ctRealPlc1.RealPlc = plc1;
+            ctStation1.ctRealPlc1.Plc = plcCtl1;
             ctStation2.Station = st2;
-            ctStation2.ctRealPlc1.RealPlc = plc2;
+            ctStation2.ctRealPlc1.Plc = plcCtl2;
         }
 
         private void btnStartLoop_Click(object sender, EventArgs e)

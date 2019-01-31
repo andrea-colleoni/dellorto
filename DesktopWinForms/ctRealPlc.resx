@@ -126,7 +126,7 @@
     <value>Microsoft Sans Serif, 16.2pt</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 0</value>
+    <value>433, 0</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 32</value>
@@ -147,13 +147,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnAccendi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnAccendi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 67</value>
+    <value>8, 32</value>
   </data>
   <data name="btnAccendi.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 41</value>
@@ -174,16 +174,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAccendi.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnSpegni.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnSpegni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 67</value>
+    <value>8, 79</value>
   </data>
   <data name="btnSpegni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 41</value>
+    <value>110, 41</value>
   </data>
   <data name="btnSpegni.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -201,7 +201,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSpegni.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblBit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -210,7 +210,7 @@
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
   <data name="lblBit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 3</value>
+    <value>3, 0</value>
   </data>
   <data name="lblBit.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 29</value>
@@ -231,11 +231,122 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblBit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pctStatus.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="pctStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 41</value>
+  </data>
+  <data name="pctStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pctStatus.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pctStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pctStatus.Name" xml:space="preserve">
+    <value>pctStatus</value>
+  </data>
+  <data name="&gt;&gt;pctStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pctStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pctStatus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="aGauge1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 0</value>
+  </data>
+  <data name="aGauge1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 150</value>
+  </data>
+  <data name="aGauge1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="aGauge1.Text" xml:space="preserve">
+    <value>aGauge1</value>
+  </data>
+  <data name="&gt;&gt;aGauge1.Name" xml:space="preserve">
+    <value>aGauge1</value>
+  </data>
+  <data name="&gt;&gt;aGauge1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.AGauge, AGauge, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aGauge1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aGauge1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>it-IT</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -243,7 +354,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 130</value>
+    <value>542, 190</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ctRealPlc</value>

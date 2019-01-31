@@ -9,10 +9,11 @@ namespace LogicLayer.PLC
     {
         public bool BitPlcPowerOn { get; set; }
         public string Name { get; }
+        public string IP { get; }
 
         private ISubject<bool> _bitPower;
         private const int SWITCH_TIME_MS = 500;
-        private bool _acceso;
+        public bool _acceso;
         private Timer timer;
 
         public PlcEmulator(string name)

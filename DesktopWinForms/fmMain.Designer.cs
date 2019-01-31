@@ -108,17 +108,17 @@
             // 
             // ctStation1
             // 
-            this.ctStation1.Location = new System.Drawing.Point(12, 191);
+            this.ctStation1.Location = new System.Drawing.Point(18, 141);
             this.ctStation1.Name = "ctStation1";
-            this.ctStation1.Size = new System.Drawing.Size(521, 325);
+            this.ctStation1.Size = new System.Drawing.Size(584, 203);
             this.ctStation1.Station = null;
             this.ctStation1.TabIndex = 7;
             // 
             // ctStation2
             // 
-            this.ctStation2.Location = new System.Drawing.Point(589, 191);
+            this.ctStation2.Location = new System.Drawing.Point(18, 350);
             this.ctStation2.Name = "ctStation2";
-            this.ctStation2.Size = new System.Drawing.Size(521, 325);
+            this.ctStation2.Size = new System.Drawing.Size(584, 195);
             this.ctStation2.Station = null;
             this.ctStation2.TabIndex = 8;
             // 
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 557);
+            this.ClientSize = new System.Drawing.Size(961, 557);
             this.Controls.Add(this.ctStation2);
             this.Controls.Add(this.ctStation1);
             this.Controls.Add(this.btnPulisci);

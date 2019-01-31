@@ -65,6 +65,7 @@
     <Compile Include="PLC\Plc.cs" />
     <Compile Include="PLC\PlcEmulator.cs" />
     <Compile Include="PLC\PlcMessage.cs" />
+    <Compile Include="PLC\PlcStatus.cs" />
     <Compile Include="PLC\Station.cs" />
     <Compile Include="PreliminaryChecks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

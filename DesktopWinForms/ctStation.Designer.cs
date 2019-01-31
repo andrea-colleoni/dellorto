@@ -45,10 +45,10 @@
             // 
             // ctRealPlc1
             // 
-            this.ctRealPlc1.Location = new System.Drawing.Point(49, 145);
+            this.ctRealPlc1.Location = new System.Drawing.Point(0, 53);
             this.ctRealPlc1.Name = "ctRealPlc1";
-            this.ctRealPlc1.RealPlc = null;
-            this.ctRealPlc1.Size = new System.Drawing.Size(377, 130);
+            this.ctRealPlc1.Plc = null;
+            this.ctRealPlc1.Size = new System.Drawing.Size(538, 138);
             this.ctRealPlc1.TabIndex = 1;
             // 
             // ctStation
@@ -58,7 +58,7 @@
             this.Controls.Add(this.ctRealPlc1);
             this.Controls.Add(this.lblName);
             this.Name = "ctStation";
-            this.Size = new System.Drawing.Size(521, 325);
+            this.Size = new System.Drawing.Size(558, 210);
             this.ResumeLayout(false);
             this.PerformLayout();
 
